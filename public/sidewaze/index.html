@@ -1,0 +1,547 @@
+<!--[if IE ]><![endif]-->
+<!doctype html>
+<!--[if lt IE 8]> <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]> <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="no-js lt-ie10 ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+ <title>サイヌーの信ぴょう全然進まない</title>
+ 
+ <!-- Bootstrap core CSS use 3.1.1 and up framework :: this is a custom base made with the customizer :: screen shot and .json included  -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+ <!-- Way Better Bootstrap Modals INSTRUCTIONS: https://github.com/jschr/bootstrap-modal/ -->
+ <!-- DEMO:: http://jschr.github.io/bootstrap-modal/bs3.html -->
+<link href="assets/css/bootstrap-modal.css" rel="stylesheet" type="text/css">
+
+ <!-- Google Fonts -->
+ <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,700' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'> 
+
+ <!-- Wrapper and Supporting Styles -->
+ <link href="assets/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/sidewaze_columns.css" rel="stylesheet" type="text/css">
+ <link href="assets/css/sidewaze_base.css" rel="stylesheet" type="text/css">
+ 
+ <!-- ####### Put your color css last class 'base-color' is only used for demo ######### -->
+ <link href="assets/css/colors/sidewaze_base_color.css" class="base-color" rel="stylesheet" type="text/css">
+ 
+ 
+ <!-- SCRIPTS IN HEAD ============================================== -->
+ 
+ <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+ 
+ <!--	NOTE:: jquery 2.x does not support IE 8 so version 1.9.1 is used for older versions of IE
+				:: calling jQuery in the head for ajax work if necessary.
+				-->
+ <!--[if gt IE 8]><!-->
+		<script src="assets/js/jquery.min.2.0.3.js"></script>
+		<!--<![endif]-->
+ <!--[if lt IE 9]>
+		<script src="assets/js/1.9.1-jquery.min.js"></script>
+		<![endif]-->
+ 
+ <!-- WINDOWS 8 Phones BUG FIX -->
+ <script src="assets/js/windows-fix.js"></script>
+
+ <!--[if lt IE 9]>
+  <script type="text/javascript" src="assets/js/selectivizr.js"></script>
+<![endif]-->
+
+ 
+<!-- ========= GENERATE CODE AND TOUCH ICONS http://iconifier.net/ =========== -->
+
+
+</head>
+
+
+<body>
+
+<!-- accessibility skip to nav skip content -->
+<ul class="sr-only" id="top">
+ <li><a href="#nav" title="Skip to navigation" accesskey="n">Skip to Navigation</a></li>
+ <li><a href="#page" title="Skip to content" accesskey="c">Skip to Content</a></li>
+</ul>
+<!--  /.sr-only accessibility-->
+
+
+ <!-- ____________ Navigation Column _______________  -->
+ 
+<div class="nav-col">
+  
+ <nav id="nav" class="clearfix" role="navigation">
+ 
+  <!-- ____________ User Wrapper for login and sign up links _______________  -->
+  <div class="user-wrapper">
+   <p><a href="#login-modal" data-toggle="modal" class="toggle-login"> <i class="fa fa-sign-in"></i>&nbsp;&nbsp;Login</a> <span class="v-divider"></span> <a href="#signup-modal" data-toggle="modal" class="toggle-signup"> <i class="fa fa-pencil"></i>&nbsp;&nbsp;Sign Up</a> </p>
+  </div>
+  
+ <!-- ____________ Primary Menu _______________  -->
+    <!-- TO KEEP OPEN WHEN ON THAT SECTION add class "active" to the a tag of the parent li 
+    (the one with the .has-children class on it) <li class="has-children"><a href="#" class="active" ... -->
+
+  <ul class="primary-nav">   
+   <li class="active"><a href="index.html">Home</a></li>
+   <!-- add class .active on li item when the page is current -->
+   <li><a href="your-link-here.html">About</a></li>
+   <li class="has-children"><a href="#">Portfolio</a> <!-- add class .has-children on li item if the li has babies -->
+    <ul>
+     <li><a href="your-link-here.html">Portfolio Child Link 1</a></li>
+     <li><a href="your-link-here.html">Portfolio Child Link 2</a></li>
+     <li class="has-children"><a href="#">Portfolio Child w/Child Trigger</a>
+      <ul>
+       <li><a href="your-link-here.html">Portfolio Grand Child Link 1</a></li>
+       <li><a href="your-link-here.html">Portfolio Grand Child Link 2</a></li>
+      </ul>
+     </li>
+     <li><a href="your-link-here.html">Portfolio Child Link 3</a></li>
+     <li><a href="your-link-here.html">Portfolio Child Link 4</a></li>
+    </ul>
+   </li>
+   <li class="has-children"><a href="#">Services</a>
+    <ul>
+     <li><a href="your-link-here.html">Services Child Link 1</a></li>
+     <li><a href="your-link-here.html">Services Child Link 2</a></li>
+     <li class="has-children"><a href="#">Services Child w/Child Trigger</a>
+      <ul>
+       <li><a href="your-link-here.html">Services Grand Child Link 1</a></li>
+       <li><a href="your-link-here.html">Services Grand Child Link 2</a></li>
+      </ul>
+     </li>
+     <li><a href="your-link-here.html">Services Child Link 3</a></li>
+     <li><a href="your-link-here.html">Services Child Link 4</a></li>
+    </ul>
+   </li>
+   <li><a href="blog.html">Blog</a></li>
+   <li><a href="your-link-here.html">Bootstrap</a></li>
+  </ul>
+ </nav>
+</div>
+<!-- /.nav-col --> 
+
+
+<!-- ____________ Logo Column (search and social follow) _______________  -->
+ 
+<div class="logo-col">
+ <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a> 
+ 
+ <!-- ____________ LOGO _______________  -->
+ <div class="logo-wrapper">
+  <a href="#" class="clearfix"> <img id="logo" src="assets/images/logo.png" alt="company name"> </a>
+ </div>
+ <!-- /logo-wrapper -->
+
+  <!-- ____________ SEARCH WRAPPER _______________  -->
+ <div class="search-wrapper">
+  <a href="#" class="toggle-search tooltip-hover" title="search" data-placement="left"><i class="fa fa-search"></i></a> 
+  
+  <!--  SEARCH PANEL -->
+  <div class="search-panel">
+   <form role="form">
+    <input type="search" placeholder="Enter search term and press enter" class="form-control">
+   </form>
+  </div> 
+ </div>
+ <!-- /search-wrapper -->
+
+
+  <!-- ____________ SOCIAL WRAPPER _______________  -->
+ <div class="social-wrapper">
+  <ul>
+   <li><a href="#" class="fa fa-facebook tooltip-hover" data-placement="left" title="Follow Us on Facebook"></a></li>
+   <li><a href="#" class="fa fa-google-plus tooltip-hover" data-placement="left" title="Follow Us on Google Plus"></a></li>
+   <li><a href="#" class="fa fa-twitter tooltip-hover" data-placement="left" title="Follow Us on Twitter"></a></li>
+   <li><a href="#" class="fa fa-github tooltip-hover" data-placement="left" title="Visit our GitHub Page"></a></li>
+   <li><a href="#" class="fa fa-linkedin tooltip-hover" data-placement="left" title="Follow Us on LinkedIn"></a></li>
+   <li><a href="#" class="fa fa-instagram tooltip-hover" data-placement="left" title="Follow Us on Instagram"></a></li>
+   <li><a href="#" class="fa fa-rss tooltip-hover" data-placement="left" title="Subscribe to Our RSS Feed"></a></li>
+  </ul>
+  <!-- .social -->
+ </div>
+</div>
+<!-- /.logo-col --> 
+
+
+
+<!-- ____________ CONTENT COLUMN _______________  -->
+
+<div class="content-col" id="page">
+
+ <div class="inner-content" > <!-- DO NOT USE .container or .container-fluid with this framework -->
+
+ 
+ <!-- _________ BEGIN .multi-item-slider // http://www.owlgraphic.com/owlcarousel/index.html#demo // lazy loading ___________ -->
+ 
+ <div class="multi-slider owl-carousel clearfix">
+  <figure class="item"> <img data-src="data:image/jpeg;base64,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" src="/" alt="Feature 1" class="lazyOwl" />
+   <figcaption>credit: <a href="http://www.flickr.com/photos/dannypigart/113569013/">Danny PiG</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></figcaption>
+  </figure>
+  <figure class="item"> <img data-src="assets/demo-images/664637664.jpg" src="/" alt="Feature 1" class="lazyOwl" />
+   <figcaption>credit: <a href="http://www.flickr.com/photos/everydaylifemodern/664637664/">observista</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by-nd/2.0/">cc</a></figcaption>
+  </figure>
+  <figure class="item"> <img data-src="assets/demo-images/1383113606.jpg" src="/" alt="Feature 1" class="lazyOwl" />
+   <figcaption>credit: <a href="http://www.flickr.com/photos/asthmatic/1383113606/">asthmatic</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by-nd/2.0/">cc</a></figcaption>
+  </figure>
+  <figure class="item"> <img data-src="assets/demo-images/2033195014.jpg" src="/" alt="Feature 1" class="lazyOwl" />
+   <figcaption>credit: <a class="text-underline" href="http://www.flickr.com/photos/pagedooley/2033195014/">kevin dooley</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by/2.0/">cc</a></figcaption>
+  </figure>
+  <figure class="item"> <img data-src="assets/demo-images/2191568652.jpg" src="/" alt="Feature 1" class="lazyOwl" />
+   <figcaption>credit: <a href="http://www.flickr.com/photos/karenhorton/2191568652/">karen horton</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by/2.0/">cc</a></figcaption>
+  </figure>
+  <figure class="item"> <img data-src="assets/demo-images/3210096256.jpg" src="/" alt="Feature 1" class="lazyOwl" />
+   <figcaption>credit: <a href="http://www.flickr.com/photos/ollieolarte/3210096256/">olarte.ollie</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></figcaption>
+  </figure>
+  <figure class="item"> <img data-src="assets/demo-images/4180676190.jpg" src="/" alt="Feature 1" class="lazyOwl" />
+   <figcaption>credit: <a href="http://www.flickr.com/photos/davefayram/4180676190/">DaveFayram</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by/2.0/">cc</a></figcaption>
+  </figure>
+  <figure class="item"> <img data-src="assets/demo-images/6995883979.jpg" src="/" alt="Feature 1" class="lazyOwl" />
+   <figcaption>credit: <a href="http://www.flickr.com/photos/chrispiascik/6995883979/">Chris Piascik</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by-nd/2.0/">cc</a></figcaption>
+  </figure>
+ </div>
+ 
+ <!-- _________ END /.multi-item-slider ___________ -->
+ 
+
+
+  <!-- CUSTOM banner uses fit-text jQuery -->
+  <div class="banner">
+   <h1 class="display-text">
+   <span class="line-1">Sainu<em>&</em>Who are you?</span>
+   <span class="line-2">Responsive Wrapper</span>
+   <span class="line-3">for Bootstrap 3x Framework</span>
+   </h1>
+  </div>
+  <!-- /.banner -->
+  
+  <h2 class="h1 font-weight-thin">Wrap & Roll sideWaze</h2>
+
+  <p class="lead"><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.</p>
+  
+  <div class="row">
+   <div class="col-ms-6 col-sm-6">
+  <p>Pellentesque habitant morbi tristiquesenectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#" class="text-underline">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+   </div>
+   <!--/.col-* -->
+
+   <div class="col-ms-6 col-sm-6">
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo.</p>
+   </div>
+   <!--/.col-* -->
+
+   </div>
+  <!-- /.row -->
+
+  <hr class="vertical-spacer">
+  
+  <div class="row">
+   <div class="col-ms-4 col-sm-4">
+    <i class="fa fa-refresh feature-icon"><!--icon --></i>
+    <h2 class="spaced-out-header h4 uppercase font-weight-bold">Refreshing</h2>
+    <p class="med-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+    <p><a class="btn btn-default btn-sm" href="#" role="button">Some Link &raquo;</a></p>
+    <hr class="vertical-spacer visible-xs">
+   </div>
+   <!--/.col-* -->
+   <div class="col-ms-4 col-sm-4">
+    <i class="fa fa-mobile feature-icon"><!--icon --></i> <i class="fa fa-tablet feature-icon"><!--icon --></i> <i class="fa fa-desktop feature-icon"><!--icon --></i>
+    <h2 class="spaced-out-header h4 uppercase font-weight-bold">Responsive</h2>
+    <p class="med-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+    <p><a class="btn btn-default btn-sm" href="#" role="button">Some Link &raquo;</a></p>
+    <hr class="vertical-spacer visible-xs">
+   </div>
+   <!--/.col-* -->
+   <div class="col-ms-4 col-sm-4">
+    <i class="fa fa-code feature-icon"><!--icon --></i>
+    <h2 class="spaced-out-header h4 uppercase font-weight-bold">Clean</h2>
+    <p class="med-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+    <p><a class="btn btn-default btn-sm" href="#" role="button">Some Link &raquo;</a></p>
+   </div>
+   <!--/.col-* -->
+   </div>
+  <!-- /.row -->
+  
+  <hr class="vertical-spacer">
+  <div class="row">
+   <div class="col-ms-5 col-sm-4 col-lg-5">
+    <figure> 
+    <img src="assets/demo-images/1383113606.jpg" class="img-responsive img-custom" alt="" />
+     <figcaption class="small">credit: <a href="http://www.flickr.com/photos/asthmatic/1383113606/">asthmatic</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by-nd/2.0/">cc</a></figcaption>
+    </figure>
+    
+      <hr class="vertical-spacer visible-xs"><!-- spacing vertically when stacked-->
+
+   </div>
+   <div class="col-ms-7 col-sm-8 col-lg-7">
+    <h2 class="h3 font-weight-thin no-margin-top">Head in the Game</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+    <hr>
+    <blockquote>
+     <p class="lead">Design is not just what it looks like and feels like. Design is how it works.</p>
+     <footer>Steve Jobs </footer>
+    </blockquote>
+   </div>
+  </div>
+  <!-- /.row -->
+  
+ </div>
+ <!--/inner-content -->
+ 
+</div>
+<!--/content-col --> 
+
+
+<!-- ______________ Footer Column :: jQuery to make equal heights from 901px - 1199px ______________ -->
+
+<footer class="footer footer-col clearfix">
+ <div class="footer-content-1">
+  <div class="inner-content">
+   <h5>Contact Us</h5>
+   
+   <p class="no-margin-bottom">
+   Responsive Heads Up<br>
+   1255 Nowhere Street<br>
+   Tampa, FL 33655<br>
+   <strong>phone:</strong> <a class="text-underline" href="tel:8135551234">813.555.1234</a><br>
+   <strong>fax:</strong> 813.555.1235<br>
+   <span class="overflow"><strong>email:</strong> <a  class="text-underline" href="mailto:email@domain.com">email@companydomain.com</a></span>
+   </p>
+   
+  </div>
+  <!--/.inner-content-->
+ </div>
+ <!--/.footer-col-1 -->
+ 
+ <hr class="divider">
+ 
+ <div class="footer-content-2">
+  <div class="inner-content">
+   <h5>Stay Updated</h5>
+   <p>Sign up for our newsletter. We won't share your email address.</p>
+   <form action="yourscript.php" method="post">
+    <div class="input-group input-group-sm footer-signup">
+     <input class="form-control" placeholder="Your@EmailAddress.com" type="email">
+     <span class="input-group-btn">
+     <button type="submit" class="btn btn-primary">Sign Up</button>
+     </span> 
+     <!--/.input-group-->
+    </div>
+   </form>
+  </div>
+  <!--/.inner-content-->
+ </div>
+ <!--/.footer-col-2 -->
+ 
+ <hr class="divider">
+ 
+ <div class="footer-content-3">
+  <div class="inner-content">
+   <h5>Recent Images</h5>
+    <div class="img-widget clearfix">
+        <a href="#"><img src="../middle/assets/demo-images/florence-341469_150.jpg" alt="" /></a>
+        <a href="#"><img src="../middle/assets/demo-images/frankfurt-285607_150.jpg" alt="" /></a>
+        <a href="#"><img src="../middle/assets/demo-images/home-22527_150.jpg" alt="" /></a>
+        <a href="#"><img src="../middle/assets/demo-images/milwaukee-art-museum-3984_150.jpg" alt="" /></a>
+        <a href="#"><img src="../middle/assets/demo-images/reichstag-366201_150.jpg" alt="" /></a>
+        <a href="#"><img src="../middle/assets/demo-images/stairs-8443_150.jpg" alt="" /></a>
+        <a href="#"><img src="../middle/assets/demo-images/stairs-63747_150.jpg" alt="" /></a>
+        <a href="#"><img src="../middle/assets/demo-images/stairs-113610_150.jpg" alt="" /></a>
+        <a href="#"><img src="../middle/assets/demo-images/us-capitol-325341_150.jpg" alt="" /></a>
+        <a href="#"><img src="../middle/assets/demo-images/vaulted-cellar-247391_150.jpg" alt="" /></a>
+    </div>
+    <!--/.img-widget-->   
+  </div>
+  <!--/.inner-content-->
+ </div>
+ <!--/.footer-col-3 -->
+ 
+ <hr class="divider">
+ <div class="footer-content-4">
+  <div class="inner-content">
+   <h5>Latest Articles</h5>
+   <ul class="article-list"> 
+    <li><a href="your-link-goes-here.html">We will amplify our power to benchmark</a></li>
+    <li><a href="your-link-goes-here.html">We have revolutionized the conceptualization of structuring</a></li>
+    <li><a href="your-link-goes-here.html">Everything is relative; relatively speaking.</a></li>
+    <li><a href="your-link-goes-here.html">My other body is an immortal robot body.</a></li>
+    <li><a href="your-link-goes-here.html">I don't know who they are but they're right behind you</a></li>
+    <li><a href="your-link-goes-here.html">For those about to rock, we salute you </a> </li>
+   </ul>
+  </div>
+  <!--/.inner-content-->
+ </div>
+ <!--/.footer-col-4 -->
+ 
+ <hr class="divider">
+ <div class="inner-content copyright">
+  <p class="small">© Copyright 2014 Christina Arasmo Beymer. 
+   All rights reserved. Please purchase this wrapper so you can use it in your project. 
+   Email <a href="mailto:christinabeymer@gmail.com" class="text-underline">the designer.</a> </p>
+ </div>
+ <!--/.inner-content--> 
+ 
+</footer>
+<!--/footer-col --> 
+
+<!-- ______________ END FOOTER ______________ --> 
+
+<!-- _________ FAUX COLUMNS ________ -->
+
+<div class="faux-col faux-nav-col">
+</div>
+<div class="faux-col faux-logo-col">
+</div>
+<div class="faux-col faux-content-col">
+</div>
+<div class="faux-col faux-footer-col">
+</div>
+
+<!--to top --> 
+<a id="go-to-top" title="up"> <i class="fa fa-arrow-circle-o-up"></i> </a> 
+
+<!-- this ends the site content and begins the modals for sign up and login --> 
+
+<!-- ____________ LOGIN MODAL _______________  -->
+
+<div id="login-modal" class="modal fade user-modal" tabindex="-1" data-width="760" style="display: none;">
+ <div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+ </div>
+ <div class="modal-body">
+  <div class="row">
+   
+   <!-- col-ms-6 non-bootstrap column for 600px - 767px -->
+   <div class="col-sm-6 col-ms-6">
+    <h4 class="title">Social Login</h4>
+    <ul class="list-unstyled social-user">
+     <li><a href="#" title="Login with Facebook" class="facebook"><i class="fa fa-facebook"></i><span>Login with Facebook</span></a></li>
+     <li><a href="#" title="Login with Google Plus" class="google"><i class="fa fa-google-plus"></i><span>Login with Google</span></a></li>
+     <li><a href="#" title="Login with Twitter" class="twitter"><i class="fa fa-twitter"></i><span>Login with Twitter</span></a></li>
+     <li><a href="#" title="Login with Wordpress" class="wordpress"><i class="fa fa-wordpress"></i><span>Login with Wordpress</span></a></li>
+    </ul>
+    <!-- /.social-user -->
+   </div>
+   <!-- /col-sm-6 col-ms-6--> 
+   
+   <!-- col-ms-6 non-bootstrap column for 600px - 767px -->
+   <div class="col-sm-6 col-ms-6">
+    <h4 class="title">Sign In</h4>
+    <form role="form" action="your-login-script-goes-here.php">
+     <div class="form-group">
+      <input type="email" class="form-control" placeholder="Enter email">
+     </div>
+     <div class="form-group">
+      <input type="password" class="form-control" placeholder="Password">
+     </div>
+     <div class="form-group checkbox small">
+      <label>
+       <input type="checkbox">
+       Remember Me </label>
+     </div>
+     <p class="text-center">
+      <button class="btn btn-default btn-custom" type="submit"><i class="fa fa-lock"></i> Sign in</button>
+     </p>
+    </form>
+   </div>
+   <!-- /col-sm-6 col-ms-6-->
+   
+  </div>
+  <!-- /.row-->
+  
+    <p class="text-center"><a class="text-underline" href="your-link-here.html">Forgot your password?</a> <br>
+     Don't have an account yet? <a class="text-underline" href="#signup-modal" data-toggle="modal" data-dismiss="modal">Sign up</a> </p>
+  
+ </div>
+ <!-- /.modal-body-->
+</div>
+<!-- /.modal #login-modal --> 
+
+<!-- ____________ SIGNUP MODAL _______________  -->
+
+<div id="signup-modal" class="modal fade user-modal" tabindex="-1" data-width="760" style="display: none;">
+ <div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+ </div>
+ <div class="modal-body">
+  <div class="row">
+   
+   <!-- col-ms-6 non-bootstrap column for 600px - 767px -->
+   <div class="col-sm-6  col-ms-6">
+    <h4 class="title">Sign Up with...</h4>
+    <ul class="list-unstyled social-user">
+     <li><a href="#" title="Signup with Facebook" class="facebook"><i class="fa fa-facebook"></i><span>Signup with Facebook</span></a></li>
+     <li><a href="#" title="Signup with Google Plus" class="google"><i class="fa fa-google-plus"></i><span>Signup with Google</span></a></li>
+     <li><a href="#" title="Signup with Twitter" class="twitter"><i class="fa fa-twitter"></i><span>Signup with Twitter</span></a></li>
+     <li><a href="#" title="Signup with Wordpress" class="wordpress"><i class="fa fa-wordpress"></i><span>Signup with Wordpress</span></a></li>
+    </ul>
+    <!-- /.social-user -->
+   </div>
+   <!-- /col-sm-6 col-ms-6--> 
+   
+   <!-- col-ms-6 non-bootstrap column for 600px - 767px -->
+   <div class="col-sm-6 col-ms-6">
+    <h4 class="title">Sign Up</h4>
+    <form role="form" action="your-registrtation-script-goes-here.php">
+     <div class="form-group">
+      <input type="email" class="form-control" placeholder="Enter email">
+     </div>
+     <div class="form-group">
+      <input type="password" class="form-control" placeholder="Password">
+     </div>
+     <p class="text-center">
+      <button class="btn btn-default btn-custom" type="submit"><i class="fa fa-lock"></i> Register</button>
+     </p>
+    </form>
+   </div>
+   <!-- /col-sm-6 col-ms-6-->
+   
+  </div>
+  <!-- /.row-->
+  
+      <p class="text-center">Already have an account? <a class="text-underline" href="#login-modal" data-toggle="modal" data-dismiss="modal">Login</a></p>
+
+  
+ </div>
+ <!-- /.modal-body-->
+</div>
+<!-- /.modal #signup-modal --> 
+
+
+<!-- _________ FOOTER SCRIPTS ________ --> 
+
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/jquery.sidewaze_base.js"></script> 
+
+<!-- Way Better Bootstrap Modals INSTRUCTIONS: https://github.com/jschr/bootstrap-modal/ --> 
+<!-- DEMO:: http://jschr.github.io/bootstrap-modal/bs3.html --> 
+<script src="assets/js/bootstrap-modalmanager.js"></script> 
+<script src="assets/js/bootstrap-modal.js"></script> 
+
+<!-- Responsive Carousel LEARN IT HERE: http://www.owlgraphic.com/owlcarousel/demos/custom.html--> 
+<script src="assets/owl-carousel/owl.carousel.min.js"></script> 
+<script>
+     $(document).ready(function() {
+        $(".multi-slider").owlCarousel({
+        lazyLoad : true,
+        navigation : false,
+        pagination: true,
+        items : 4, 
+        itemsDesktop : [1400,4],
+        itemsDesktopSmall : [900,3], 
+        itemsTablet: [600,2], 
+        itemsMobile : [320,1]
+    });
+ });
+</script>
+
+
+
+</body>
+</html>
